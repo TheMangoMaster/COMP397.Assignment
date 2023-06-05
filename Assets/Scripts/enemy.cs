@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class enemy : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
     public float speed = 5f;
 
@@ -11,7 +11,7 @@ public class enemy : MonoBehaviour
 
     private void Start()
     {
-        target = waypoint.points[0];
+        target = Waypoint.points[0];
     }
 
     private void Update()
@@ -26,13 +26,13 @@ public class enemy : MonoBehaviour
 
     void GetNextWayPoint()
     {
-        if(waypointIndex >= waypoint.points.Length-1)
+        if(waypointIndex >= Waypoint.points.Length-1)
         { 
             Destroy(gameObject); 
             return; 
         }
 
         waypointIndex++;
-        target = waypoint.points[waypointIndex];
+        target = Waypoint.points[waypointIndex];
     }
 }
