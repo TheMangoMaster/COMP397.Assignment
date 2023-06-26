@@ -28,7 +28,7 @@ public class WaveSpawner : MonoBehaviour
         countdown = Mathf.Clamp(countdown, 0f, Mathf.Infinity);
 
         //waveCountdownText.text = "More bugs coming in:  " + Mathf.Round(countdown).ToString(); //sends countdown without decimals to the text object
-        waveCountdownText.text = "BUGS INCOMING!!  " + string.Format("{0:00.00}", countdown); //sends countdown without decimals to the text object
+        waveCountdownText.text = "GOLEMS INCOMING!!  " + string.Format("{0:00.00}", countdown); //sends countdown without decimals to the text object
         waveIndexText.text = "Wave:  " + waveIndex.ToString();                                                                               
     }
 
