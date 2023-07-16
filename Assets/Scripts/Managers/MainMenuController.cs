@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-/*
-Author: Jacob Todasco
-Student #: 301251200
-Date Modified: 01/29/2023
-Description: Main Menu behavior
-*/
 
 public class MainMenuController : MonoBehaviour
 {
