@@ -44,7 +44,7 @@ public class Cannonball : MonoBehaviour
         }
         else
         {
-            target.GetComponent<Enemy>().TakeDamage(damage);
+            target.GetComponent<enemy>().TakeDamage(damage);
         }
 
         Destroy(gameObject);
@@ -57,7 +57,7 @@ public class Cannonball : MonoBehaviour
         {
             if (collider.tag == "Enemy")
             {
-                collider.GetComponent<Enemy>().TakeDamage(damage);
+                collider.GetComponent<enemy>().TakeDamage(damage);
             }            
         }
     }

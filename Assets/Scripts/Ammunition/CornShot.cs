@@ -36,7 +36,7 @@ public class CornShot : MonoBehaviour
     void HitTarget()
     {         
         
-        target.GetComponent<Enemy>().TakeDamage(damage);
+        target.GetComponent<enemy>().TakeDamage(damage);
 
         Destroy(gameObject);
     }

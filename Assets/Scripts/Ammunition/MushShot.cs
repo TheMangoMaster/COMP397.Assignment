@@ -37,7 +37,7 @@ public class MushShot : MonoBehaviour
         GameObject effectInstance = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
         Destroy(effectInstance, 2f);
         //Destroy(target.gameObject);
-        target.GetComponent<Enemy>().TakeDamage(damage);
+        target.GetComponent<enemy>().TakeDamage(damage);
 
 
         Destroy(gameObject);
